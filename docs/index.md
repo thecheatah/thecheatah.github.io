@@ -4,7 +4,7 @@ Hello World!
 <ul>
   {% for post in site.posts %}
     <li>
-      {{ post.date | date_to_long_string: "ordinal", "US" }} - <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_long_string: "ordinal", "US" }})
     </li>
   {% endfor %}
 </ul>
